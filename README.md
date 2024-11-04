@@ -9,12 +9,12 @@ This repository provides a simplified implementation for using the MedImageInsig
 
 What we have done:
 
-- Downloaded the models from azure
-- Got rid of all the uncecessary files
-- Got rid of uncecessary mlflow code to make standalone implementation
-- Moved to uv for dependecy management
+- Downloaded the models from Azure
+- Got rid of all the unnecessary files
+- Got rid of unnecessary MLflow code to make a standalone implementation
+- Moved to uv for dependency management
 - Added multi-label classification
-- Create example FastAPI service
+- Created an example with the FastAPI service
 
 ## Usage
 
@@ -29,18 +29,18 @@ git lfs install
 git clone https://huggingface.co/lion-ai/MedImageInsights
 ```
 3. Install the required dependencies
-We are using [uv](https://github.com/astral-sh/uv) package manager to simplyfy the installation.
+We are using [uv](https://github.com/astral-sh/uv) package manager to simplify the installation.
 
-To create a virual env simply run
+To create a virtual env, simply run:
 ```bash
 uv sync
 ```
-Or to run a single script just run
+Or to run a single script, just run:
 ```bash
 uv run example.py
 ```
 
-Thats it!
+That's it!
 
 ## Examples
 See to the `example.py` file.
@@ -94,9 +94,9 @@ print(results["text_embeddings"])
 ```bash
 uv run flask_app.py
 ```
-Go to to localhost:8000/docs to see the swagger.
+Go to localhost:8000/docs to see the swagger.
 
-The application provides endpoints for classification and image embeddings. Images have to be base64 encoded
+The application provides endpoints for classification and image embeddings. Images have to be base64 encoded.
 
 
 ## Roadmap
