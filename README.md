@@ -90,9 +90,9 @@ print(results["image_embeddings"])
 results = classifier.encode(texts=labels)
 print(results["text_embeddings"])
 ```
-### Flask FastAPI server
+### FastAPI server
 ```bash
-uv run flask_app.py
+uv run fastapi_app.py
 ```
 Go to localhost:8000/docs to see the swagger.
 
