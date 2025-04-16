@@ -8,3 +8,4 @@ wheels/
 
 # Virtual environments
 .venv
+2024.09.27/vision_model/medimageinsigt-v1.0.0.pt
